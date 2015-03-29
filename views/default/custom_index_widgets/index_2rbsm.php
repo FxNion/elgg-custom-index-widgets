@@ -4,6 +4,11 @@
 		$area3widgets = $vars['area3'];
 		$layoutmode   = $vars['layoutmode']; //edit, index
 		
+		$login_style = get_plugin_setting("login_style", "custom_index_widgets");
+		if (!isset($login_style)) {
+			$login_style = 'inlayout';
+		}
+		
 ?>
 
     <table cellspacing="10" cellpadding="10" width="100%" class="<?php echo elgg_echo($layoutmode); ?>">
@@ -30,7 +35,7 @@
           <?php }?>
               <div id="middlecolumn_widgets" class="small_<?php echo elgg_echo($layoutmode); ?>_box">
               	<?php
-            	 	if (!isloggedin())
+            	 	if (!isloggedin() && $login_style == 'inlayout')
             	 		echo elgg_view("account/forms/login"); 
             	?>
               <?php if (is_array($area2widgets) && sizeof($area2widgets) > 0)

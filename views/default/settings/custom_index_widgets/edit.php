@@ -5,7 +5,7 @@
   <div class="contentWrapper">
     <table>
       <tr>
-  	     <td style="width:40%"><?php echo elgg_echo("custom_index_widgets:layout"); ?></td>
+  	     <td style="width:50%"><?php echo elgg_echo("custom_index_widgets:layout"); ?></td>
   	     <td>
   	         <?php	echo elgg_view('input/pulldown', array(
           			'internalname' => 'params[ciw_layout]',
@@ -26,6 +26,20 @@
           	?>
          </td>
       </tr>
+	  <tr>
+	  	<td style="width:50%"><?php echo elgg_echo("custom_index_widgets:login_style"); ?></td>
+  	     <td>
+  	         <?php	echo elgg_view('input/pulldown', array(
+          			'internalname' => 'params[login_style]',
+          			'options_values' => array(
+          				'inlayout' => elgg_echo('custom_index_widgets:inlayout'),
+          				'topbar' => elgg_echo('custom_index_widgets:topbar'),
+        			),
+          			'value' => $vars["entity"]->login_style
+          		));
+          	?>
+         </td>
+	  </tr>
 	  
       </table>
     </div>
