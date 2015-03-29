@@ -13,12 +13,16 @@
 		'custom_index_widgets:latest_pages_index' => "Dernieres pages",
 		'custom_index_widgets:latest_events_index' => 'Prochains evenements',
 		'custom_index_widgets:latest_wire_index' => 'Derniers messages',
-		'custom_index_widgets:free_html_index' => 'Texte libre',
+		'custom_index_widgets:inline_content_index' => 'Texte libre',
 		'custom_index_widgets:html_content' => 'Votre texte',
 		'custom_index_widgets:latest_generic_index'=>"Contenu générique",
 		'custom_index_widgets:latest_tasks_index'=>"Tâches récentes",
 		'custom_index_widgets:latest_activity_index' => 'En bref',
-		 
+		'custom_index_widgets:cloud_generic_index'=>"Nuage de tags",
+		'custom_index_widgets:widget_subtype'=>"Type d'entité",
+		'custom_index_widgets:metadata_name' => "Metadata",
+		'custom_index_widgets:threshold'=> "Seuil minimal",
+		'custom_index_widgets:latest_video_index' => 'Dernières vidéos',
 		
 		'custom_index_widgets:rich_media_index' => "Contenu multimédia",
 		'custom_index_widgets:widget_video_width' => "Largeur de la vidéo (chiffre sans px ni %)",

@@ -14,11 +14,12 @@
 		if ($ciw_showdashboard == NULL)
 			 set_plugin_setting("ciw_showdashboard", "yes", "custom_index_widgets");
     			 
-    	add_widget_type('latest_members_index',elgg_echo ('custom_index_widgets:latest_members_index'),elgg_echo ('custom_index_widgets:latest_members_index'), "custom_index_widgets", true);
-      add_widget_type('free_html_index',elgg_echo ('custom_index_widgets:free_html_index'),elgg_echo ('custom_index_widgets:free_html_index'), "custom_index_widgets", true);
+    	  add_widget_type('latest_members_index',elgg_echo ('custom_index_widgets:latest_members_index'),elgg_echo ('custom_index_widgets:latest_members_index'), "custom_index_widgets", true);
+		  add_widget_type('inline_content_index',elgg_echo ('custom_index_widgets:inline_content_index'),elgg_echo ('custom_index_widgets:inline_content_index'), "custom_index_widgets", true);
  		  add_widget_type('rich_media_index',elgg_echo ('custom_index_widgets:rich_media_index'),elgg_echo ('custom_index_widgets:rich_media_index'), "custom_index_widgets", true);
 		  add_widget_type('latest_generic_index',elgg_echo ('custom_index_widgets:latest_generic_index'),elgg_echo ('custom_index_widgets:latest_generic_index'), "custom_index_widgets", true);
 		  add_widget_type('latest_activity_index',elgg_echo ('custom_index_widgets:latest_activity_index'),elgg_echo ('custom_index_widgets:latest_activity_index'), "custom_index_widgets", true);
+		  add_widget_type('cloud_generic_index',elgg_echo ('custom_index_widgets:cloud_generic_index'),elgg_echo ('custom_index_widgets:cloud_generic_index'), "custom_index_widgets", true);
 
         if(is_plugin_enabled('groups'))	
           add_widget_type('latest_groups_index',elgg_echo ('custom_index_widgets:latest_groups_index'),elgg_echo ('custom_index_widgets:latest_groups_index'), "custom_index_widgets", true);
@@ -50,6 +51,9 @@
 		
 		if(is_plugin_enabled('tasks'))
           add_widget_type('latest_tasks_index',elgg_echo ('custom_index_widgets:latest_tasks_index'),elgg_echo ('custom_index_widgets:latest_tasks_index'), "custom_index_widgets",true);
+		  
+		if(is_plugin_enabled('izap_videos')) 
+          add_widget_type('latest_video_index',elgg_echo  ('custom_index_widgets:latest_video_index'),elgg_echo ('custom_index_widgets:latest_video_index'), "custom_index_widgets", true);
 		  
 		register_plugin_hook('index','system','custom_index_widgets');
     }
