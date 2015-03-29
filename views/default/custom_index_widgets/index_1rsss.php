@@ -13,7 +13,7 @@
 
     <table cellspacing="10" cellpadding="10" width="100%" class="<?php echo elgg_echo($layoutmode); ?>">
       <tr>
-        <td align="left" valign="top" class="<?php echo elgg_echo($layoutmode); ?>">
+        <td align="left" valign="top" class="small">
           <?php if ($layoutmode == 'edit_mode') {?> 
               <h2 class="small_<?php echo elgg_echo($layoutmode); ?>_box"><?php echo elgg_echo("custom_index_widgets:area1"); ?></h2>
           <?php }?>
@@ -31,7 +31,7 @@
               } ?>
               </div>
         </td>
-        <td align="left" valign="top" class="<?php echo elgg_echo($layoutmode); ?>">
+        <td align="left" valign="top" class="small">
           <?php if ($layoutmode == 'edit_mode') {?> 
           <h2 class="small_<?php echo elgg_echo($layoutmode); ?>_box"><?php echo elgg_echo("custom_index_widgets:area2"); ?></h2>
           <?php }?>
@@ -45,7 +45,7 @@
               } ?>
               </div>
         </td>
-	  	  <td align="left" valign="top" class="<?php echo elgg_echo($layoutmode); ?>">
+	  	  <td align="left" valign="top" class="small">
 	  	    <?php if ($layoutmode == 'edit_mode') {?> 
           <h2 class="small_<?php echo elgg_echo($layoutmode); ?>_box"><?php echo elgg_echo("custom_index_widgets:area3"); ?></h2>
           <?php }?>
