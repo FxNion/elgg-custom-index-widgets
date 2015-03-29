@@ -29,10 +29,10 @@
   	$form_body .= elgg_echo('password') . elgg_view('input/password', array('internalname' => 'password', 'class' => 'logintop_input'));
   	$form_body .= elgg_view('input/submit', array('value' => elgg_echo('login'), 'class' => 'logintop_submit_button'));
   	  	
-	$form_body .= "<p class=\"logintop_links\">";
+	$form_body .= "<span class=\"logintop_links\">";
 	$form_body .=  (!isset($CONFIG->disable_registration) || !($CONFIG->disable_registration)) ? "<a href=\"{$vars['url']}account/register.php\">" . elgg_echo('register') . "</a> |" : "";
   	$form_body .=  "<a href=\"{$vars['url']}account/forgotten_password.php\">" . elgg_echo('user:password:lost');  
-	$form_body .= "</p>";
+	$form_body .= "</span>";
   	
 	$login_url = $vars['url'];
 	

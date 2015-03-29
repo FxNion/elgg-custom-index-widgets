@@ -18,7 +18,7 @@
   if ($site_categories === NULL || $widget_categorie === NULL){
     $widgtet_datas = list_entities('object',$object_type,$widget_group,$num_items,false, false, false);
   }else{
-  	 $widgtet_datas = list_entities_from_metadata('universal_categories', $site_categories[$widget_categorie], 'object', $object_type, $widget_group, $num_items, false, false); 
+  	 $widgtet_datas = list_entities_from_metadata('universal_categories', $site_categories[$widget_categorie], 'object', $object_type, $widget_group, $num_items, false, false,false); 
   }
 ?>        
 <div class="contentWrapper">

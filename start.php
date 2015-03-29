@@ -7,13 +7,18 @@
 		extend_view('metatags','custom_index_widgets/js');		
 		
 		$ciw_layout = get_plugin_setting("ciw_layout", "custom_index_widgets");
-		
 		if ($ciw_layout == NULL)
 			 set_plugin_setting("ciw_layout", "index_2rmsb", "custom_index_widgets");
+			 
+		$ciw_showdashboard = get_plugin_setting("ciw_showdashboard", "custom_index_widgets");
+		if ($ciw_showdashboard == NULL)
+			 set_plugin_setting("ciw_showdashboard", "yes", "custom_index_widgets");
     			 
     	add_widget_type('latest_members_index',elgg_echo ('custom_index_widgets:latest_members_index'),elgg_echo ('custom_index_widgets:latest_members_index'), "custom_index_widgets", true);
-        add_widget_type('free_html_index',elgg_echo ('custom_index_widgets:free_html_index'),elgg_echo ('custom_index_widgets:free_html_index'), "custom_index_widgets", true);
- 		add_widget_type('rich_media_index',elgg_echo ('custom_index_widgets:rich_media_index'),elgg_echo ('custom_index_widgets:rich_media_index'), "custom_index_widgets", true);
+      add_widget_type('free_html_index',elgg_echo ('custom_index_widgets:free_html_index'),elgg_echo ('custom_index_widgets:free_html_index'), "custom_index_widgets", true);
+ 		  add_widget_type('rich_media_index',elgg_echo ('custom_index_widgets:rich_media_index'),elgg_echo ('custom_index_widgets:rich_media_index'), "custom_index_widgets", true);
+		  add_widget_type('latest_generic_index',elgg_echo ('custom_index_widgets:latest_generic_index'),elgg_echo ('custom_index_widgets:latest_generic_index'), "custom_index_widgets", true);
+		  add_widget_type('latest_activity_index',elgg_echo ('custom_index_widgets:latest_activity_index'),elgg_echo ('custom_index_widgets:latest_activity_index'), "custom_index_widgets", true);
 
         if(is_plugin_enabled('groups'))	
           add_widget_type('latest_groups_index',elgg_echo ('custom_index_widgets:latest_groups_index'),elgg_echo ('custom_index_widgets:latest_groups_index'), "custom_index_widgets", true);
@@ -24,7 +29,7 @@
         if(is_plugin_enabled('news'))
           add_widget_type('latest_news_index',elgg_echo ('custom_index_widgets:latest_news_index'),elgg_echo ('custom_index_widgets:latest_news_index'), "custom_index_widgets",true);
         
-        if(is_plugin_enabled('bookmarks'))
+        if(is_plugin_enabled('bookmarks_enhanced'))
           add_widget_type('latest_bookmarks_index',elgg_echo ('custom_index_widgets:latest_bookmarks_index'),elgg_echo ('custom_index_widgets:latest_bookmarks_index'), "custom_index_widgets",true);
         
         if(is_plugin_enabled('blog'))
@@ -42,6 +47,9 @@
 		}
 		if(is_plugin_enabled('thewire'))
           add_widget_type('latest_wire_index',elgg_echo ('custom_index_widgets:latest_wire_index'),elgg_echo ('custom_index_widgets:latest_wire_index'), "custom_index_widgets",true);
+		
+		if(is_plugin_enabled('tasks'))
+          add_widget_type('latest_tasks_index',elgg_echo ('custom_index_widgets:latest_tasks_index'),elgg_echo ('custom_index_widgets:latest_tasks_index'), "custom_index_widgets",true);
 		  
 		register_plugin_hook('index','system','custom_index_widgets');
     }
