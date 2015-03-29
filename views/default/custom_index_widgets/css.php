@@ -14,6 +14,18 @@
 	float:left;
 	margin:2pt 5px 3px 0pt;
 }
+#login-box{
+	width:100%;
+}
+#login-box form{
+	width:auto;
+}
+
+#login-box input[type="text"],
+#login-box input[type="password"]{
+	width: 95%;
+}
+
 
 #rightcolumn_widgets.small_edit_mode_box, 
 #leftcolumn_widgets.small_edit_mode_box, 
@@ -46,22 +58,25 @@
 #customise_page_view table tr td h2.small_index_mode_box { 
   width: 312px;
   padding: 0 0 5px;
+  margin-right: 10px;
   border: 0 none;
 }
 #rightcolumn_widgets.medium_index_mode_box, 
 #leftcolumn_widgets.medium_index_mode_box, 
 #middlecolumn_widgets.medium_index_mode_box,
 #customise_page_view table tr td h2.medium_index_mode_box{
-  width: 600px;
+  width: 608px;
   padding: 0 0 5px;
+  margin-right: 10px;
   border: 0 none;
 }
 #rightcolumn_widgets.big_index_mode_box, 
 #leftcolumn_widgets.big_index_mode_box, 
 #middlecolumn_widgets.big_index_mode_box,
 #customise_page_view table tr td h2.big_index_mode_box{ 
-  width: 937px;
+  width: auto;
   padding: 0 0 5px;
+  margin-right: 10px;
   border: 0 none;
 }
 #rightcolumn_widgets.half_index_mode_box, 
@@ -70,6 +85,7 @@
 #customise_page_view.half_index_mode_box h2{ 
   width: 460px;
   padding: 0 0 5px;
+  margin-right: 10px;
   border: 0 none;
 }
 
