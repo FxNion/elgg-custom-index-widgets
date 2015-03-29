@@ -11,6 +11,7 @@
 			'custom_index_widgets:nogroups' => "Il n'y a aucun fichier pour l'instant",	
 			'custom_index_widgets:news' => "Dernieres news",
 			'custom_index_widgets:pages' => "Dernieres pages",
+			'custom_index_widgets:latest_events' => 'Prochains evenements',
 			
       'custom_index_widgets:layout' => "Présentation",
 			
@@ -19,6 +20,10 @@
       'custom_index_widgets:index_2rhhb' => '2 lignes, [Half, Half] - [Big]',
       'custom_index_widgets:index_1rsss' => '1 ligne, [Small, Small, Small]',
       'custom_index_widgets:index_1rsms' => '1 ligne, [Small, Medium, Small]',
+      
+      'custom_index_widgets:index_2rbhh' => '2 lignes, [Big] -[Half, Half]',
+      'custom_index_widgets:index_2rbsm' => '2 lignes, [Big] -[Small, Medium]',
+      'custom_index_widgets:index_2rbms' => '2 lignes, [Big] -[Medium, Small]',
       
       'custom_index_widgets:area1' => 'Widgets Zone 1',
       'custom_index_widgets:area2' => 'Widgets Zone 2',

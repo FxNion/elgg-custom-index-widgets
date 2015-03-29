@@ -1,18 +1,14 @@
 <?php 
   
   $num_items = $vars['entity']->num_items;
-  $widgtets_data = get_entities_from_metadata('icontime', '', 'user', '', 0, $num_items);
+  set_context('search');
+  $widgtet_datas = list_entities('object','bookmarks',0,$num_items,false, false, false);
 ?>        
   <div class="index_box">
       <div class="contentWrapper">
       <?php 
-          if(isset($widgtets_data)) {
-              //display member avatars
-              foreach($widgtets_data as $members){
-                  echo "<div class=\"index_members\">";
-                  echo elgg_view("profile/icon",array('entity' => $members, 'size' => 'small'));
-                  echo "</div>";
-              }
+          if(isset($widgtet_datas)) {
+              echo $widgtet_datas;
           }
       ?>
     <div class="clearfloat"></div>

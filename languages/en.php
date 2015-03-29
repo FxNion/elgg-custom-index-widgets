@@ -21,7 +21,11 @@
       'custom_index_widgets:index_2rsmb' => '2 rows, [Small, Medium] - [Big]',
       'custom_index_widgets:index_2rhhb' => '2 rows, [Half, Half] - [Big]',
       'custom_index_widgets:index_1rsss' => '1 row, [Small, Small, Small]',
-      'custom_index_widgets:index_1rsms' => '1 row, [Small, Medium, Small]',
+      
+      
+      'custom_index_widgets:index_2rbhh' => '2 rows, [Big] -[Half, Half]',
+      'custom_index_widgets:index_2rbsm' => '2 rows, [Big] -[Small, Medium]',
+      'custom_index_widgets:index_2rbms' => '2 rows, [Big] -[Medium, Small]',
       
       'custom_index_widgets:area1' => 'Widgets Zone 1',
       'custom_index_widgets:area2' => 'Widgets Zone 2',

@@ -19,7 +19,12 @@
     		register_page_handler ( 'custom_index_widgets', 'custom_index_widgets_page_handler' );		
            // Replace the default index page
     		register_plugin_hook('index','system','custom_index_widgets');
-    			
+    		
+    		$ciw_layout = get_plugin_setting("ciw_layout", "custom_index_widgets");
+    		
+    		if ($ciw_layout == NULL)
+    			 set_plugin_setting("ciw_layout", "index_2rmsb", "custom_index_widgets");
+    			 
     		add_widget_type('latest_members',elgg_echo ('custom_index_widgets:members'),elgg_echo ('custom_index_widgets:members'), "custom_index_widgets");
         
         if(is_plugin_enabled('groups'))	
@@ -40,8 +45,13 @@
         if(is_plugin_enabled('pages'))
           add_widget_type('latest_pages',elgg_echo ('custom_index_widgets:pages'),elgg_echo ('custom_index_widgets:pages'), "custom_index_widgets");
         
-	
-		
+	     if(is_plugin_enabled('event_calendar'))
+          add_widget_type('latest_events',elgg_echo ('custom_index_widgets:latest_events'),elgg_echo ('custom_index_widgets:latest_events'), "custom_index_widgets");
+
+       if(is_plugin_enabled('tidypics')){ 
+		      add_widget_type('latest_photos_index', elgg_echo("tidypics:widget:latest"), elgg_echo("tidypics:widget:latest_descr"), 'custom_index_widgets');
+		      add_widget_type('latest_album_index', elgg_echo("tidypics:widget:albums"), elgg_echo("tidypics:widget:latest_descr"), 'custom_index_widgets');
+		   }
     }
     
     function custom_index_widgets() {
