@@ -14,6 +14,15 @@
 		'custom_index_widgets:latest_pages_index' => "Latest pages",
 		'custom_index_widgets:latest_events_index' => 'Incomming events',
 		'custom_index_widgets:latest_wire_index' => 'Last wire posts',
+		'custom_index_widgets:free_html_index' => 'Free html',
+		'custom_index_widgets:html_content' => 'Your text',
+		
+		'custom_index_widgets:rich_media_index' => "Multimédia content",
+		'custom_index_widgets:widget_video_width' => "Width (number without px or %)",
+	    'custom_index_widgets:widget_video_height' => "Heigh (number without px or %)",
+	    'custom_index_widgets:widget_video_url' => "File Url (with the extension according to supported formats below)",
+	    'custom_index_widgets:widget_video_caption' => "Caption",
+	    'custom_index_widgets:supported_media_formats'=> 'Supported files formats',
 		
 		'custom_index_widgets:layout' => "Layout",
 		
@@ -35,6 +44,15 @@
 		'custom_index_widgets:reset' => "Reset all zones",
 		
 		'custom_index_widgets:pleaselogin' => "Please, please, login to see more...",
+		
+		'custom_index_widgets:widget_title' => "Override widget title (will be shown only on the index in replacement of widget default title)",
+		'custom_index_widgets:context_mode' => "Layout style",
+		'custom_index_widgets:context_list' => "List",
+		'custom_index_widgets:context_detail' => "Detail",
+		
+		'custom_index_widgets:login_style'=>"Login position",
+		'custom_index_widgets:inlayout'=>"In layout",
+		'custom_index_widgets:topbar'=>"Top bar",
 	
 	);
 					

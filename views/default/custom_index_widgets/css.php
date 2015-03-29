@@ -43,7 +43,8 @@
 #leftcolumn_widgets.big_edit_mode_box, 
 #middlecolumn_widgets.big_edit_mode_box,
 #customise_page_view table tr td h2.big_edit_mode_box{ 
-  width: 644px;
+  margin:5px 10px 0 0;
+  width: 630px;
 }
 #rightcolumn_widgets.half_edit_mode_box, 
 #leftcolumn_widgets.half_edit_mode_box, 
@@ -89,7 +90,58 @@
   border: 0 none;
 }
 
-table.index__mode, table.index_mode td{
+table.index_mode{
   width: 100%;
   border: 0 none;
+}
+
+.logintop{
+	margin:0 auto;
+	padding:0;
+	padding-top: 3px;
+	width:990px;
+}
+.logintop_links{
+	margin-left: 60px;
+}
+
+.logintop_links a {
+	margin:0 0 0 2px;
+	color:#999999;
+	padding:3px;
+}
+.logintop_links a:hover {
+	color:#eeeeee;
+}
+
+#logintopform input.logintop_input {
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px;
+	background-color:#FFFFFF;
+	border:1px solid #BBBBBB;
+	color:#999999;
+	font-size:12px;
+	font-weight:bold;
+	margin:0pt;
+	padding:2px;
+	width:180px;
+	height:12px;
+}
+#logintopform input.logintop_submit_button {
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px;
+	color:#333333;
+	background: #cccccc;
+	border:none;
+	font-size:12px;
+	font-weight:bold;
+	margin:0px;
+	padding:2px;
+	width:auto;
+	height:18px;
+	cursor:pointer;
+}
+#logintopform input.logintop_submit_button:hover {
+	color:#ffffff;
+	background: #4690d6;
 }

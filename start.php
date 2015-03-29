@@ -15,6 +15,9 @@
 	
         // Extend system CSS with our own styles
 		extend_view('css','custom_index_widgets/css');
+		extend_view('metatags','custom_index_widgets/js');
+		extend_view('elgg_topbar','custom_index_widgets/elgg_topbar');
+
 			
 		//		
 		register_plugin_hook('index','system','custom_index_widgets');
@@ -24,35 +27,37 @@
 		if ($ciw_layout == NULL)
 			 set_plugin_setting("ciw_layout", "index_2rmsb", "custom_index_widgets");
     			 
-    	add_widget_type('latest_members_index',elgg_echo ('custom_index_widgets:latest_members_index'),elgg_echo ('custom_index_widgets:latest_members'), "custom_index_widgets", true);
-        
+    	add_widget_type('latest_members_index',elgg_echo ('custom_index_widgets:latest_members_index'),elgg_echo ('custom_index_widgets:latest_members_index'), "custom_index_widgets", true);
+        add_widget_type('free_html_index',elgg_echo ('custom_index_widgets:free_html_index'),elgg_echo ('custom_index_widgets:free_html_index'), "custom_index_widgets", true);
+ 		add_widget_type('rich_media_index',elgg_echo ('custom_index_widgets:rich_media_index'),elgg_echo ('custom_index_widgets:rich_media_index'), "custom_index_widgets", true);
+
         if(is_plugin_enabled('groups'))	
-          add_widget_type('latest_groups_index',elgg_echo ('custom_index_widgets:latest_groups_index'),elgg_echo ('custom_index_widgets:latest_groups'), "custom_index_widgets", true);
+          add_widget_type('latest_groups_index',elgg_echo ('custom_index_widgets:latest_groups_index'),elgg_echo ('custom_index_widgets:latest_groups_index'), "custom_index_widgets", true);
          
         if(is_plugin_enabled('file'))   	
-          add_widget_type('latest_files_index',elgg_echo ('custom_index_widgets:latest_files_index'),elgg_echo ('custom_index_widgets:latest_files'), "custom_index_widgets", true);
+          add_widget_type('latest_files_index',elgg_echo ('custom_index_widgets:latest_files_index'),elgg_echo ('custom_index_widgets:latest_files_index'), "custom_index_widgets", true);
         
         if(is_plugin_enabled('news'))
-          add_widget_type('latest_news_index',elgg_echo ('custom_index_widgets:latest_news_index'),elgg_echo ('custom_index_widgets:latest_news'), "custom_index_widgets",true);
+          add_widget_type('latest_news_index',elgg_echo ('custom_index_widgets:latest_news_index'),elgg_echo ('custom_index_widgets:latest_news_index'), "custom_index_widgets",true);
         
         if(is_plugin_enabled('bookmarks'))
-          add_widget_type('latest_bookmarks_index',elgg_echo ('custom_index_widgets:latest_bookmarks_index'),elgg_echo ('custom_index_widgets:latest_bookmarks'), "custom_index_widgets",true);
+          add_widget_type('latest_bookmarks_index',elgg_echo ('custom_index_widgets:latest_bookmarks_index'),elgg_echo ('custom_index_widgets:latest_bookmarks_index'), "custom_index_widgets",true);
         
         if(is_plugin_enabled('blog'))
-          add_widget_type('latest_blogs_index',elgg_echo ('custom_index_widgets:latest_blogs_index'),elgg_echo ('custom_index_widgets:latest_blogs'), "custom_index_widgets",true);
+          add_widget_type('latest_blogs_index',elgg_echo ('custom_index_widgets:latest_blogs_index'),elgg_echo ('custom_index_widgets:latest_blogs_index'), "custom_index_widgets",true);
         
         if(is_plugin_enabled('pages'))
-          add_widget_type('latest_pages_index',elgg_echo ('custom_index_widgets:latest_pages_index'),elgg_echo ('custom_index_widgets:latest_pages'), "custom_index_widgets",true);
+          add_widget_type('latest_pages_index',elgg_echo ('custom_index_widgets:latest_pages_index'),elgg_echo ('custom_index_widgets:latest_pages_index'), "custom_index_widgets",true);
         
 	    if(is_plugin_enabled('event_calendar'))
-          add_widget_type('latest_events_index',elgg_echo ('custom_index_widgets:latest_events_index'),elgg_echo ('custom_index_widgets:latest_events'), "custom_index_widgets",true);
+          add_widget_type('latest_events_index',elgg_echo ('custom_index_widgets:latest_events_index'),elgg_echo ('custom_index_widgets:latest_events_index'), "custom_index_widgets",true);
 
       	if(is_plugin_enabled('tidypics')){ 
 		      add_widget_type('latest_photos_index', elgg_echo("tidypics:widget:latest"), elgg_echo("tidypics:widget:latest_descr"), "custom_index_widgets", true);
 		      add_widget_type('latest_album_index', elgg_echo("tidypics:widget:albums"), elgg_echo("tidypics:widget:latest_descr"), "custom_index_widgets",true);
 		}
 		if(is_plugin_enabled('thewire'))
-          add_widget_type('latest_wire_index',elgg_echo ('custom_index_widgets:latest_wire_index'),elgg_echo ('custom_index_widgets:latest_wire'), "custom_index_widgets",true);
+          add_widget_type('latest_wire_index',elgg_echo ('custom_index_widgets:latest_wire_index'),elgg_echo ('custom_index_widgets:latest_wire_index'), "custom_index_widgets",true);
     
     }
     

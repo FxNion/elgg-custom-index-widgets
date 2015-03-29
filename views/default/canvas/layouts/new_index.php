@@ -1,5 +1,20 @@
 <?php
 
+	/**
+	 * Elgg top toolbar
+	 * The standard elgg top toolbar
+	 * 
+	 * @package Elgg
+	 * @subpackage Core
+	 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
+	 * @author Curverider Ltd
+	 * @copyright Curverider Ltd 2008
+	 * @link http://elgg.org/
+	 * 
+	 */
+?>
+<?php
+
 	set_context('custom_index_widgets');
 	//set_page_owner(get_loggedin_userid());
 	set_page_owner(2);
@@ -41,7 +56,9 @@
   			}
   			$leftcolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
   			$var_widget = new ElggWidget($widget->getGUID());
-			$title = $widgettypes[$widget->handler]->name;
+			$title = $var_widget->widget_title;
+			if (!$title)
+				$title = $widgettypes[$widget->handler]->name;
 			if (!$title)
 				$title = $widget->handler;
 			$var_widget->title = $title;
@@ -61,7 +78,9 @@
   			}
   			$middlecolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
   			$var_widget = new ElggWidget($widget->getGUID());
-			$title = $widgettypes[$widget->handler]->name;
+			$title = $var_widget->widget_title;
+			if (!$title)
+				$title = $widgettypes[$widget->handler]->name;
 			if (!$title)
 				$title = $widget->handler;
 			$var_widget->title = $title;
@@ -80,7 +99,9 @@
   			}
   			$rightcolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
   			$var_widget = new ElggWidget($widget->getGUID());
-			$title = $widgettypes[$widget->handler]->name;
+			$title = $var_widget->widget_title;
+			if (!$title)
+				$title = $widgettypes[$widget->handler]->name;
 			if (!$title)
 				$title = $widget->handler;
 			$var_widget->title = $title;

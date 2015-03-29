@@ -13,6 +13,15 @@
 		'custom_index_widgets:latest_pages_index' => "Dernieres pages",
 		'custom_index_widgets:latest_events_index' => 'Prochains evenements',
 		'custom_index_widgets:latest_wire_index' => 'Derniers messages',
+		'custom_index_widgets:free_html_index' => 'Texte libre',
+		'custom_index_widgets:html_content' => 'Votre texte',
+		
+		'custom_index_widgets:rich_media_index' => "Contenu multimédia",
+		'custom_index_widgets:widget_video_width' => "Largeur de la vidéo (chiffre sans px ni %)",
+	    'custom_index_widgets:widget_video_height' => "Hauteur de la vidéo (chiffre sans px ni %)",
+	    'custom_index_widgets:widget_video_url' => "Url du fichier (avec l'extension parmi celles supportées ci-dessous)",
+	    'custom_index_widgets:widget_video_caption' => "Légende de la vidéo",
+	    'custom_index_widgets:supported_media_formats'=> 'Formats supportés',
 			
 		'custom_index_widgets:layout' => "Présentation",
 			
@@ -30,12 +39,21 @@
 		'custom_index_widgets:area2' => 'Widgets Zone 2',
 		'custom_index_widgets:area3' => 'Widgets Zone 3',
     
-	    'custom_index_widgets:admin:notfound' => 'Page non trouv&eacute;e',
-	    'custom_index_widgets:index' => "Configuration de l'index",
+	  'custom_index_widgets:admin:notfound' => 'Page non trouv&eacute;e',
+	  'custom_index_widgets:index' => "Configuration de l'index",
 		'custom_index_widgets:num_items' => "Nombre d'items",
 		'custom_index_widgets:reset' => "Supprimer tout les widgets",
 		
 		'custom_index_widgets:pleaselogin' => "Allez, connectez-vous quoi ...",
+		
+		'custom_index_widgets:widget_title' => "Titre de remplacement (est affiché à la place du titre du widget uniquement sur la page d'accueil)",
+		'custom_index_widgets:context_mode' => "Mode d'affichage",
+		'custom_index_widgets:context_list' => "Liste",
+		'custom_index_widgets:context_detail' => "Détail",
+		
+		'custom_index_widgets:login_style'=>"Position de la zone login",
+		'custom_index_widgets:inlayout'=>"Dans la page",
+		'custom_index_widgets:topbar'=>"Top bar",
 	);
 					
 	add_translation("fr",$french);

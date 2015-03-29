@@ -4,9 +4,18 @@
 	
   	$site_categories = $vars['config']->site->categories;
   	$widget_categorie = $vars['entity']->widget_categorie;
+	$widget_title = $vars['entity']->widget_title;
 
   ?>
-
+  <p>
+  <?php echo elgg_echo('custom_index_widgets:widget_title'); ?>:
+  <?php
+	echo elgg_view('input/text', array(
+			'internalname' => 'params[widget_title]',                        
+			'value' => $widget_title
+		));
+	?>
+  </p>
   <p>
   <?php echo elgg_echo('custom_index_widgets:num_items'); ?>
   <?php
