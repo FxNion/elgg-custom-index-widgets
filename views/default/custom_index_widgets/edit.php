@@ -75,8 +75,10 @@ $(document).ready(function () {
     <?php echo elgg_view('output/longtext', array('value' => elgg_echo('widgets:add:description'))); ?>
   </div>
   <?php
-  $leftcolumn_widgets = array();
+  $leftcolumn_widgets_view = array();
+  $leftcolumn_widgets="";
   $area_widget_list = $area1widgets;
+  
 	if (is_array($area_widget_list) && sizeof($area_widget_list) > 0) {
 		foreach($area_widget_list as $widget) {
 			if (!empty($leftcolumn_widgets)) {
@@ -87,27 +89,31 @@ $(document).ready(function () {
 		}
 	}
 	
-  $middlecolumn_widgets = array();
-  $area_widget_list = $area2widgets;
+  $middlecolumn_widgets_view = array();
+  $middlecolumn_widgets="";
+  $area_widget_list = $area2widgets; 
+  
 	if (is_array($area_widget_list) && sizeof($area_widget_list) > 0) {
 		foreach($area_widget_list as $widget) {
 			if (!empty($middlecolumn_widgets)) {
 				$middlecolumn_widgets .= "::";
 			}
-			$rightcolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
-			$rightcolumn_widgets_view[] =elgg_view("custom_index_widgets/draggable_widget_area", array('columnwidget_size' => 149, 'widgettypes'=>$widgettypes, 'widget' => $widget) );
+			$middlecolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
+			$middlecolumn_widgets_view[] =elgg_view("custom_index_widgets/draggable_widget_area", array('columnwidget_size' => 149, 'widgettypes'=>$widgettypes, 'widget' => $widget) );
 		}
 	}
 
-  $rightcolumn_widgets = array();
-  $area_widget_list = $area3widgets;
+  $rightcolumn_widgets_view = array();
+  $rightcolumn_widgets ="";
+  $area_widget_list = $area3widgets; 
+  
 	if (is_array($area_widget_list) && sizeof($area_widget_list) > 0) {
 		foreach($area_widget_list as $widget) {
 			if (!empty($rightcolumn_widgets)) {
 				$rightcolumn_widgets .= "::";
 			}
-			$middlecolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
-			$middlecolumn_widgets_view[] =elgg_view("custom_index_widgets/draggable_widget_area", array('columnwidget_size' => 149, 'widgettypes'=>$widgettypes, 'widget' => $widget) );
+			$rightcolumn_widgets .= "{$widget->handler}::{$widget->getGUID()}";
+			$rightcolumn_widgets_view[] =elgg_view("custom_index_widgets/draggable_widget_area", array('columnwidget_size' => 149, 'widgettypes'=>$widgettypes, 'widget' => $widget) );
 		}
 	}
 
@@ -115,7 +121,7 @@ $(document).ready(function () {
   ?>
   <div id="customise_page_view">
   <?php
-    echo elgg_view("custom_index_widgets/$ciw_layout", array('area1' => $leftcolumn_widgets_view, 'area2' => $rightcolumn_widgets_view,'area3' => $middlecolumn_widgets_view , 'layoutmode' => 'edit_mode') ); 
+    echo elgg_view("custom_index_widgets/$ciw_layout", array('area1' => $leftcolumn_widgets_view, 'area2' => $middlecolumn_widgets_view,'area3' => $rightcolumn_widgets_view , 'layoutmode' => 'edit_mode') ); 
   ?>
   </div>
   <form action="<?php echo $vars['url']; ?>action/widgets/reorder" method="post">

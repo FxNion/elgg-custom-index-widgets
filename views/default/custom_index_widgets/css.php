@@ -45,7 +45,7 @@
 #rightcolumn_widgets.half_edit_mode_box, 
 #leftcolumn_widgets.half_edit_mode_box, 
 #middlecolumn_widgets.half_edit_mode_box,
-#customise_page_view.half_edit_mode_box h2{ 
+#customise_page_view table tr td h2.half_edit_mode_box{ 
   width: 306px;
 }
 
