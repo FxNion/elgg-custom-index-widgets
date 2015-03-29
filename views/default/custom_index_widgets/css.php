@@ -35,33 +35,37 @@
 #leftcolumn_widgets.small_edit_mode_box, 
 #middlecolumn_widgets.small_edit_mode_box,
 #customise_page_view table tr td h2.small_edit_mode_box { 
-  width: 200px;
+  margin:5px 10px 0 0;
+  width: auto;
 }
 #rightcolumn_widgets.medium_edit_mode_box, 
 #leftcolumn_widgets.medium_edit_mode_box, 
 #middlecolumn_widgets.medium_edit_mode_box,
 #customise_page_view table tr td h2.medium_edit_mode_box{
-  width: 400px;
+ margin:5px 10px 0 0;
+  width: auto;
 }
 #rightcolumn_widgets.big_edit_mode_box, 
 #leftcolumn_widgets.big_edit_mode_box, 
 #middlecolumn_widgets.big_edit_mode_box,
 #customise_page_view table tr td h2.big_edit_mode_box{ 
-  margin:5px 10px 0 0;
-  width: 630px;
+ margin:5px 10px 0 0;
+  width: auto;
 }
 #rightcolumn_widgets.half_edit_mode_box, 
 #leftcolumn_widgets.half_edit_mode_box, 
 #middlecolumn_widgets.half_edit_mode_box,
 #customise_page_view table tr td h2.half_edit_mode_box{ 
-  width: 306px;
+  margin:5px 10px 0 0;
+  width: auto;
 }
 
 #rightcolumn_widgets.small_index_mode_box, 
 #leftcolumn_widgets.small_index_mode_box, 
 #middlecolumn_widgets.small_index_mode_box,
 #customise_page_view table tr td h2.small_index_mode_box { 
-  width: 312px;
+  /*width: 312px;*/
+  width: auto;
   padding: 0 0 5px;
   margin-right: 10px;
   border: 0 none;
@@ -70,7 +74,8 @@
 #leftcolumn_widgets.medium_index_mode_box, 
 #middlecolumn_widgets.medium_index_mode_box,
 #customise_page_view table tr td h2.medium_index_mode_box{
-  width: 608px;
+  /*width: 608px;*/
+  width: auto;
   padding: 0 0 5px;
   margin-right: 10px;
   border: 0 none;
@@ -88,17 +93,30 @@
 #leftcolumn_widgets.half_index_mode_box, 
 #middlecolumn_widgets.half_index_mode_box,
 #customise_page_view.half_index_mode_box h2{ 
-  width: 460px;
+  /*width: 460px;*/
+  width: auto;
   padding: 0 0 5px;
   margin-right: 10px;
   border: 0 none;
 }
 
-table.index__mode, table.index_mode td{
-  width: 100%;
+table.index_mode{
+  width: 99%;
   border: 0 none;
 }
 
+td.small {
+  width: 33%;
+}
+td.half {
+  width: 47%;
+}
+td.medium {
+  width: 57%;
+}
+td.big {
+  width: 100%;
+}
 .logintop{
 	margin:0 auto;
 	padding:0;
@@ -106,7 +124,7 @@ table.index__mode, table.index_mode td{
 	width:990px;
 }
 .logintop_links{
-	float: right;
+	margin-left:80px;
 }
 
 .logintop_links a {
