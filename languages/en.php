@@ -16,6 +16,9 @@
 		'custom_index_widgets:latest_wire_index' => 'Last wire posts',
 		'custom_index_widgets:free_html_index' => 'Free html',
 		'custom_index_widgets:html_content' => 'Your text',
+		'custom_index_widgets:latest_generic_index'=>"Generic content",
+		'custom_index_widgets:latest_tasks_index'=>"Latest tasks",
+		'custom_index_widgets:latest_activity_index' => 'In the river',
 		
 		'custom_index_widgets:rich_media_index' => "Multimédia content",
 		'custom_index_widgets:widget_video_width' => "Width (number without px or %)",
@@ -52,6 +55,7 @@
 		'custom_index_widgets:login_style'=>"Login position",
 		'custom_index_widgets:inlayout'=>"In layout",
 		'custom_index_widgets:topbar'=>"Top bar",
+		'custom_index_widgets:widget_all_groups' => "All groups",
 	
 	);
 					

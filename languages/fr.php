@@ -15,6 +15,10 @@
 		'custom_index_widgets:latest_wire_index' => 'Derniers messages',
 		'custom_index_widgets:free_html_index' => 'Texte libre',
 		'custom_index_widgets:html_content' => 'Votre texte',
+		'custom_index_widgets:latest_generic_index'=>"Contenu générique",
+		'custom_index_widgets:latest_tasks_index'=>"Tâches récentes",
+		'custom_index_widgets:latest_activity_index' => 'En bref',
+		 
 		
 		'custom_index_widgets:rich_media_index' => "Contenu multimédia",
 		'custom_index_widgets:widget_video_width' => "Largeur de la vidéo (chiffre sans px ni %)",
@@ -38,8 +42,8 @@
 		'custom_index_widgets:area2' => 'Widgets Zone 2',
 		'custom_index_widgets:area3' => 'Widgets Zone 3',
     
-	  'custom_index_widgets:admin:notfound' => 'Page non trouv&eacute;e',
-	  'custom_index_widgets:index' => "Configuration de l'index",
+	    'custom_index_widgets:admin:notfound' => 'Page non trouv&eacute;e',
+	    'custom_index_widgets:index' => "Configuration de l'index",
 		'custom_index_widgets:num_items' => "Nombre d'items",
 		'custom_index_widgets:reset' => "Supprimer tout les widgets",
 		
@@ -53,6 +57,12 @@
 		'custom_index_widgets:login_style'=>"Position de la zone login",
 		'custom_index_widgets:inlayout'=>"Dans la page",
 		'custom_index_widgets:topbar'=>"Top bar",
+		
+		"custom_index_widgets:showdashboard"=>"Afficher le dashboard en fin de page",
+		"custom_index_widgets:showdashboard_yes"=>"Oui",
+		"custom_index_widgets:showdashboard_no"=>"Non",
+		
+		'custom_index_widgets:widget_all_groups' => "Tous les groupes",
 	);
 					
 	add_translation("fr",$french);
