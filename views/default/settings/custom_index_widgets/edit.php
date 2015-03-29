@@ -40,6 +40,20 @@
           	?>
          </td>
 	  </tr>
+	  <tr>
+	  	<td style="width:50%"><?php echo elgg_echo("custom_index_widgets:showdashboard"); ?></td>
+  	     <td>
+  	         <?php	echo elgg_view('input/pulldown', array(
+          			'internalname' => 'params[ciw_showdashboard]',
+          			'options_values' => array(
+          				'yes' => elgg_echo('custom_index_widgets:showdashboard_yes'),
+          				'no' => elgg_echo('custom_index_widgets:showdashboard_no'),
+        			),
+          			'value' => $vars["entity"]->ciw_showdashboard
+          		));
+          	?>
+         </td>
+	  </tr>
 	  
       </table>
     </div>
