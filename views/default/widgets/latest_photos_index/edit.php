@@ -1,6 +1,10 @@
 <?php
 	$num_items = $vars['entity']->num_items;
 	if (!isset($num_items)) $num_items = 10;
+	
+	$widget_group = $vars["entity"]->widget_group;
+  	if (!isset($widget_group)) $widget_group = 0;
+	
 	$widget_title = $vars['entity']->widget_title;
 
 ?>
@@ -12,8 +16,27 @@
 			'value' => $widget_title
 		));
 	?>
+</p>
+<p>
+  	<?php echo elgg_echo('group'); ?>: 
+  	<?php	
+		$groups = get_entities('group', '', 0, '', 100, 0, false, 0, null);
+		$group_list = array();
+		$group_list[0]= "Tout les groupes";
+		if($groups){
+    		foreach($groups as $group){
+    			$group_list[$group->getGUID()]= $group->name;
+			}
+		}
+		echo elgg_view('input/pulldown', array(
+          			'internalname' => 'params[widget_group]',
+          			'options_values' => $group_list,
+          			'value' => $widget_group
+          		));
+     ?>
+	
   </p>
-  <p>
+<p>
 <?php echo elgg_echo('custom_index_widgets:num_items'); ?>
 	
 <?php

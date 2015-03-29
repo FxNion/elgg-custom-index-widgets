@@ -20,9 +20,8 @@
 		'custom_index_widgets:rich_media_index' => "Multimédia content",
 		'custom_index_widgets:widget_video_width' => "Width (number without px or %)",
 	    'custom_index_widgets:widget_video_height' => "Heigh (number without px or %)",
-	    'custom_index_widgets:widget_video_url' => "File Url (with the extension according to supported formats below)",
+	    'custom_index_widgets:widget_video_url' => "Url",
 	    'custom_index_widgets:widget_video_caption' => "Caption",
-	    'custom_index_widgets:supported_media_formats'=> 'Supported files formats',
 		
 		'custom_index_widgets:layout' => "Layout",
 		

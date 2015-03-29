@@ -14,6 +14,10 @@
 	float:left;
 	margin:2pt 5px 3px 0pt;
 }
+
+.icon_latest {
+	margin:0 auto;
+}
 #login-box{
 	width:100%;
 }
@@ -90,7 +94,7 @@
   border: 0 none;
 }
 
-table.index_mode{
+table.index__mode, table.index_mode td{
   width: 100%;
   border: 0 none;
 }
@@ -102,7 +106,7 @@ table.index_mode{
 	width:990px;
 }
 .logintop_links{
-	margin-left: 60px;
+	float: right;
 }
 
 .logintop_links a {

@@ -19,9 +19,8 @@
 		'custom_index_widgets:rich_media_index' => "Contenu multimédia",
 		'custom_index_widgets:widget_video_width' => "Largeur de la vidéo (chiffre sans px ni %)",
 	    'custom_index_widgets:widget_video_height' => "Hauteur de la vidéo (chiffre sans px ni %)",
-	    'custom_index_widgets:widget_video_url' => "Url du fichier (avec l'extension parmi celles supportées ci-dessous)",
+	    'custom_index_widgets:widget_video_url' => "Url de la vidéo",
 	    'custom_index_widgets:widget_video_caption' => "Légende de la vidéo",
-	    'custom_index_widgets:supported_media_formats'=> 'Formats supportés',
 			
 		'custom_index_widgets:layout' => "Présentation",
 			

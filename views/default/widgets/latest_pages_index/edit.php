@@ -2,6 +2,9 @@
 	$num_items = $vars['entity']->num_items;
 	if (!isset($num_items)) $num_items = 10;
 	
+	$widget_group = $vars["entity"]->widget_group;
+  	if (!isset($widget_group)) $widget_group = 0;
+	
   	$site_categories = $vars['config']->site->categories;
   	$widget_categorie = $vars['entity']->widget_categorie;
 	$widget_title = $vars['entity']->widget_title;
@@ -38,10 +41,28 @@
 		));
 	?>
   </p>
+  <p>
+  	<?php echo elgg_echo('group'); ?>: 
+  	<?php	
+		$groups = get_entities('group', '', 0, '', 100, 0, false, 0, null);
+		$group_list = array();
+		$group_list[0]= "Tout les groupes";
+		if($groups){
+    		foreach($groups as $group){
+    			$group_list[$group->getGUID()]= $group->name;
+			}
+		}
+		echo elgg_view('input/pulldown', array(
+          			'internalname' => 'params[widget_group]',
+          			'options_values' => $group_list,
+          			'value' => $widget_group
+          		));
+     ?>
+	
+  </p>
 
   <?php if($site_categories != NULL){ ?>
-  <?php echo elgg_echo('categories'); ?>:
-  <p>  
+  <?php echo elgg_echo('categories'); ?>:  
   <?php
   $categories_with_empty_choice  = array_merge(array('-1'=>''), array_combine($site_categories,$site_categories));
   echo elgg_view('input/pulldown', array(

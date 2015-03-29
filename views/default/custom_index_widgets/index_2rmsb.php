@@ -11,6 +11,7 @@
 		
 ?>
 
+
     <table cellspacing="10" cellpadding="10" width="100%" class="<?php echo elgg_echo($layoutmode); ?>">
       <tr>
         <td align="left" valign="top" class="<?php echo elgg_echo($layoutmode); ?>">

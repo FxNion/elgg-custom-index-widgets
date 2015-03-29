@@ -2,10 +2,14 @@
 	$num_items = $vars['entity']->num_items;
 	if (!isset($num_items)) $num_items = 10;
 	
+	$widget_group = $vars["entity"]->widget_group;
+  	if (!isset($widget_group)) $widget_group = 0;
+	
   	$site_categories = $vars['config']->site->categories;
   	$widget_categorie = $vars['entity']->widget_categorie;
 	$widget_context_mode = $vars['entity']->widget_context_mode;
 	$widget_title = $vars['entity']->widget_title;
+	$widget_group = $vars["entity"]->widget_group;
   ?>
   <p>
   <?php echo elgg_echo('custom_index_widgets:widget_title'); ?>:
@@ -39,6 +43,7 @@
 		));
 	?>
   </p>
+
 
   <?php if($site_categories != NULL){ ?>
   <p>

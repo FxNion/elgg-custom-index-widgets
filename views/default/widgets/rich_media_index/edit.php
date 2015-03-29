@@ -51,14 +51,4 @@
 		));
 	?>
 </p>
-<p><?php echo elgg_echo('custom_index_widgets:supported_media_formats'); ?></p>
-<table>
-        <tbody><tr><th><b>Player<b></th><th><b>File Formats<b></th></tr>
-        <tr><td style="width: 100px">Quicktime</td><td>aif, aiff, aac, au, bmp, gsm, mov, mid, midi, mpg, mpeg, mp4, m4a, psd, qt, qtif, qif, qti, snd, tif, tiff, wav, 3g2, 3pg</td></tr>
-        <tr><td>Flash</td><td>flv, mp3, swf</td></tr>
-        <tr><td>Windows Media Player</td><td>asx, asf, avi, wma, wmv</td></tr>
-        <tr><td>Real Player</td><td>ra, ram, rm, rpm, rv, smi, smil</td></tr>
-        <tr><td>Silverlight</td><td>xaml</td></tr>
-        <tr><td>iframe</td><td>html, pdf</td></tr>
-        </tbody>
-</table>        
+

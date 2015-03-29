@@ -15,8 +15,10 @@
 ?>
 
 <?php
+  
   $login_style = get_plugin_setting("login_style", "custom_index_widgets");
-  if (!isset($login_style)) $login_style = 'inlayout';
+  if (!isset($login_style)) 
+  	$login_style = 'inlayout';
   
   if (!isloggedin() && $login_style == 'topbar') {
      
@@ -26,13 +28,11 @@
   	$form_body  = elgg_echo('username') . elgg_view('input/text', array('internalname' => 'username', 'class' => 'logintop_input'));
   	$form_body .= elgg_echo('password') . elgg_view('input/password', array('internalname' => 'password', 'class' => 'logintop_input'));
   	$form_body .= elgg_view('input/submit', array('value' => elgg_echo('login'), 'class' => 'logintop_submit_button'));
-  	//$form_body .= elgg_view('input/checkboxes', array('internalname' => 'persistent'));
-  	$form_body .= "&nbsp;<input type=\"checkbox\" name=\"persistent\" value=\"true\" />";
   	  	
-	$form_body .= "<span class=\"logintop_links\">";
+	$form_body .= "<p class=\"logintop_links\">";
 	$form_body .=  (!isset($CONFIG->disable_registration) || !($CONFIG->disable_registration)) ? "<a href=\"{$vars['url']}account/register.php\">" . elgg_echo('register') . "</a> |" : "";
-  	$form_body .=  "<a href=\"{$vars['url']}account/forgotten_password.php\">" . elgg_echo('user:password:lost')."</a>";  
-	$form_body .= "</span>";
+  	$form_body .=  "<a href=\"{$vars['url']}account/forgotten_password.php\">" . elgg_echo('user:password:lost');  
+	$form_body .= "</p>";
   	
 	$login_url = $vars['url'];
 	
@@ -127,4 +127,5 @@
 
 <?php
     }
+	
 ?>

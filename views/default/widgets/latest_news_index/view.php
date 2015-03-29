@@ -1,8 +1,10 @@
 <?php 
   
+  $object_type ='news';
+  
   $num_items = $vars['entity']->num_items;
   if (!isset($num_items)) $num_items = 10;
-  $object_type ='news';
+  
 
   $site_categories = $vars['config']->site->categories;
   $widget_categorie = $vars['entity']->widget_categorie;

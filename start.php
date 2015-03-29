@@ -1,26 +1,10 @@
 <?php
-
-	/**
-	 * Elgg custom index page
-	 * 
-	 * @package ElggIndexCustom
-	 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-	 * @author Curverider <info@elgg.com>
-	 * @copyright Curverider Ltd 2008
-	 * @link http://elgg.com/
-	 */
-
 	 
     function custom_index_widgets_init() {
 	
-        // Extend system CSS with our own styles
-		extend_view('css','custom_index_widgets/css');
-		extend_view('metatags','custom_index_widgets/js');
-		extend_view('elgg_topbar','custom_index_widgets/elgg_topbar');
 
-			
-		//		
-		register_plugin_hook('index','system','custom_index_widgets');
+		extend_view('css','custom_index_widgets/css');
+		extend_view('metatags','custom_index_widgets/js');		
 		
 		$ciw_layout = get_plugin_setting("ciw_layout", "custom_index_widgets");
 		
@@ -58,19 +42,19 @@
 		}
 		if(is_plugin_enabled('thewire'))
           add_widget_type('latest_wire_index',elgg_echo ('custom_index_widgets:latest_wire_index'),elgg_echo ('custom_index_widgets:latest_wire_index'), "custom_index_widgets",true);
-    
+		  
+		register_plugin_hook('index','system','custom_index_widgets');
     }
     
     function custom_index_widgets() {
 			
 			if (!@include_once(dirname(__FILE__) . "/index.php")) return false;
-			return true;
-			
-		}
+			return true;		
+	}
 
 
 	function custom_index_widgets_page_handler($page) {
-	global $CONFIG;
+		global $CONFIG;
 		
 		if (isset ( $page [0] )) {
 			
@@ -94,10 +78,12 @@
 		}
 	}
 	
-
+  
+  
   register_elgg_event_handler('init','system','custom_index_widgets_init');
-  register_elgg_event_handler('pagesetup','system','custom_index_widgets_pagesetup'); 
-  register_page_handler ( 'custom_index_widgets', 'custom_index_widgets_page_handler' ); 
+  register_elgg_event_handler('pagesetup','system','custom_index_widgets_pagesetup');
+   
+  register_page_handler ( 'custom_index_widgets', 'custom_index_widgets_page_handler'); 
   register_action('custom_index_widgets/reset',false,$CONFIG->pluginspath . 'custom_index_widgets/actions/reset.php',true);
 
 ?>
