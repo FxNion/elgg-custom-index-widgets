@@ -22,7 +22,7 @@
 		'custom_index_widgets:widget_subtype'=>"Type d'entité",
 		'custom_index_widgets:metadata_name' => "Metadata",
 		'custom_index_widgets:threshold'=> "Seuil minimal",
-		'custom_index_widgets:latest_video_index' => 'Dernières vidéos',
+		'custom_index_widgets:latest_izap_videos_index' => 'Dernières vidéos',
 		
 		'custom_index_widgets:rich_media_index' => "Contenu multimédia",
 		'custom_index_widgets:widget_video_width' => "Largeur de la vidéo (chiffre sans px ni %)",

@@ -9,7 +9,7 @@
 		'custom_index_widgets:latest_blogs_index' => "Latest blog posts",
 		'custom_index_widgets:latest_members_index' => "Newest members",
 		'custom_index_widgets:nofiles' => "There are no files yet",
-		'custom_index_widgets:nogroups' => "There are no files yet",	
+		'custom_index_widgets:nogroups' => "There are no groups yet",	
 		'custom_index_widgets:latest_news_index' => "Latest news",
 		'custom_index_widgets:latest_pages_index' => "Latest pages",
 		'custom_index_widgets:latest_events_index' => 'Incomming events',
@@ -23,7 +23,7 @@
 		'custom_index_widgets:widget_subtype'=>"Entity subtype",
 		'custom_index_widgets:metadata_name' => "Metadata",
 		'custom_index_widgets:threshold'=> "Thresold",
-		'custom_index_widgets:latest_video_index' => 'Latest videos',
+		'custom_index_widgets:latest_izap_videos_index' => 'Latest videos',
 		
 		'custom_index_widgets:rich_media_index' => "Multimédia content",
 		'custom_index_widgets:widget_video_width' => "Width (number without px or %)",

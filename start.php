@@ -53,7 +53,7 @@
           add_widget_type('latest_tasks_index',elgg_echo ('custom_index_widgets:latest_tasks_index'),elgg_echo ('custom_index_widgets:latest_tasks_index'), "custom_index_widgets",true);
 		  
 		if(is_plugin_enabled('izap_videos')) 
-          add_widget_type('latest_video_index',elgg_echo  ('custom_index_widgets:latest_video_index'),elgg_echo ('custom_index_widgets:latest_video_index'), "custom_index_widgets", true);
+          add_widget_type('latest_izap_videos_index',elgg_echo  ('custom_index_widgets:latest_izap_videos_index'),elgg_echo ('custom_index_widgets:latest_izap_videos_index'), "custom_index_widgets", true);
 		  
 		register_plugin_hook('index','system','custom_index_widgets');
     }

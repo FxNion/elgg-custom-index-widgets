@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin_manifest>
         <field key="author" value="Fx NION" />
-        <field key="version" value="1.8" />
+        <field key="version" value="1.9" />
         <field key="description" value="Customise your index, with severals layout and customisable widgets. And get fun." />
         <field key="website" value="http://fxnion.free.fr/" />
         <field key="copyright" value="((C) Fx NION 2009" />
