@@ -10,16 +10,7 @@
 	 */
 ?>
 
-
-.index_box {
-	margin:0 0 20px 0;
-	background: #dedede;
-	padding:0 0 5px 0;
-	-webkit-border-radius: 8px; 
-	-moz-border-radius: 8px;
-}
-
-.index_box .index_members {
+.icon_members {
 	float:left;
 	margin:2pt 5px 3px 0pt;
 }
@@ -53,7 +44,8 @@
 #leftcolumn_widgets.small_index_mode_box, 
 #middlecolumn_widgets.small_index_mode_box,
 #customise_page_view table tr td h2.small_index_mode_box { 
-  width: 300px;
+  width: 312px;
+  padding: 0 0 5px;
   border: 0 none;
 }
 #rightcolumn_widgets.medium_index_mode_box, 
@@ -61,13 +53,15 @@
 #middlecolumn_widgets.medium_index_mode_box,
 #customise_page_view table tr td h2.medium_index_mode_box{
   width: 600px;
+  padding: 0 0 5px;
   border: 0 none;
 }
 #rightcolumn_widgets.big_index_mode_box, 
 #leftcolumn_widgets.big_index_mode_box, 
 #middlecolumn_widgets.big_index_mode_box,
 #customise_page_view table tr td h2.big_index_mode_box{ 
-  width: 100%;
+  width: 937px;
+  padding: 0 0 5px;
   border: 0 none;
 }
 #rightcolumn_widgets.half_index_mode_box, 
@@ -75,6 +69,7 @@
 #middlecolumn_widgets.half_index_mode_box,
 #customise_page_view.half_index_mode_box h2{ 
   width: 460px;
+  padding: 0 0 5px;
   border: 0 none;
 }
 

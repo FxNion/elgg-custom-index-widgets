@@ -40,6 +40,7 @@ $(document).ready(function () {
     <div id="widget_picker_gallery">  
 <?php
 	foreach($widgettypes as $handler => $widget) {
+	   if (in_array("custom_index_widgets",$widget->context) || $handler == "feed_reader"){
       ?>
       <table class="draggable_widget" cellspacing="0">
         <tr>
@@ -61,9 +62,12 @@ $(document).ready(function () {
               <img src="<?php echo $vars['url']; ?>_graphics/spacer.gif" width="15px" height="15px" class="drag_handle" /></a></td>
         </tr>
       </table>
+      <?php
+	}
+?> 
 <?php
 	}
-      ?><br />
+?>    <br />
       <!-- bit of space at the bottom of the widget gallery -->
     </div>
     <!-- /#customise_editpanel_rhs -->
@@ -124,7 +128,7 @@ $(document).ready(function () {
     echo elgg_view("custom_index_widgets/$ciw_layout", array('area1' => $leftcolumn_widgets_view, 'area2' => $middlecolumn_widgets_view,'area3' => $rightcolumn_widgets_view , 'layoutmode' => 'edit_mode') ); 
   ?>
   </div>
-  <form action="<?php echo $vars['url']; ?>action/widgets/reorder" method="post">
+  <form action="<?php echo $vars['url']; ?>action/widgets/reorder" method="post" style="display: inline">
     <textarea type="textarea" value="Left widgets"   style="display:none" name="debugField1" id="debugField1" /><?php echo $leftcolumn_widgets; ?></textarea>
     <textarea type="textarea" value="Middle widgets" style="display:none" name="debugField2" id="debugField2" /><?php echo $middlecolumn_widgets; ?></textarea>
     <textarea type="textarea" value="Right widgets"  style="display:none" name="debugField3" id="debugField3" /><?php echo $rightcolumn_widgets; ?></textarea>
@@ -132,6 +136,16 @@ $(document).ready(function () {
     <input type="hidden" name="owner" value="<?php echo $page_owner; ?>" />
     <input type="submit" value="<?php echo elgg_echo('save'); ?>" class="submit_button" onclick="$('a.toggle_customise_edit_panel').click();" />
     <input type="button" value="<?php echo elgg_echo('cancel'); ?>" class="cancel_button" onclick="$('a.toggle_customise_edit_panel').click();" />
+  </form>
+  &nbsp;
+  <form action="<?php echo $vars['url']; ?>action/custom_index_widgets/reset" method="post" style="display: inline">
+  	<?php echo elgg_view('input/securitytoken') ?>
+    <textarea type="textarea" value="Left widgets"   style="display:none" name="debugField1" id="debugField1" /><?php echo $leftcolumn_widgets; ?></textarea>
+    <textarea type="textarea" value="Middle widgets" style="display:none" name="debugField2" id="debugField2" /><?php echo $middlecolumn_widgets; ?></textarea>
+    <textarea type="textarea" value="Right widgets"  style="display:none" name="debugField3" id="debugField3" /><?php echo $rightcolumn_widgets; ?></textarea>
+    <input type="hidden" name="context" value="<?php echo get_context(); ?>" />
+    <input type="hidden" name="owner" value="<?php echo $page_owner; ?>" />
+   	<input type="submit" value="<?php echo elgg_echo('custom_index_widgets:reset'); ?>" class="cancel_button"  />
   </form>
 </div>
 

@@ -5,7 +5,7 @@
 ?>
 
   <p>
-<?php echo elgg_echo('simplepie:num_items'); ?>
+<?php echo elgg_echo('custom_index_widgets:num_items'); ?>
 	
 <?php
 	echo elgg_view('input/pulldown', array(
