@@ -24,6 +24,7 @@
         'custom_index_widgets:metadata_name' => "Metadata",
         'custom_index_widgets:threshold'=> "Thresold",
         'custom_index_widgets:latest_izap_videos_index' => 'Ultimos videos',
+		'custom_index_widgets:display_avatar' => 'Avatar',
        
         'custom_index_widgets:rich_media_index' => "Contenido multimedia",
         'custom_index_widgets:widget_video_width' => "Ancho (numeros sin px o %)",

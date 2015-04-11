@@ -2,6 +2,9 @@
 	$num_items = $vars['entity']->num_items;
 	if (!isset($num_items)) $num_items = 10;
 	
+	$display_avatar = $vars['entity']->display_avatar;
+	if (!isset($display_avatar)) $display_avatar = 'yes';
+	
 	$widget_title = $vars['entity']->widget_title;
 
 ?>
@@ -30,10 +33,26 @@
 			                           '20' => '20',
 			                           '30' => '30',
 			                           '40' => '40',
-			                           '50' => '50',
+			                           '54' => '54',
+									   '60' => '60',
+									   '78' => '78',
 			                           '100' => '100',
 			                         ),
 			'value' => $num_items
+		));
+?>
+</p>
+<p>
+<?php echo elgg_echo('custom_index_widgets:display_avatar'); ?>
+	
+<?php
+	echo elgg_view('input/pulldown', array(
+			'internalname' => 'params[display_avatar]',
+			'options_values' => array( 'yes' => 'yes',
+									   'no' => 'no',
+                                 	   
+			                         ),
+			'value' => $display_avatar
 		));
 ?>
 </p>

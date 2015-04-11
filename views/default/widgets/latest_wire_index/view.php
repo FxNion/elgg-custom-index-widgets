@@ -7,14 +7,9 @@
 
 <div class="contentWrapper">
   <?php 
-  	if (isloggedin()){
-      if(isset($widgtet_datas)) {
-          echo $widgtet_datas;
-      }
-	}
-	else
-		echo elgg_echo('custom_index_widgets:pleaselogin');
-	 
+    if(isset($widgtet_datas)) {
+        echo $widgtet_datas;
+	} 
   ?>
 	<div class="clearfloat"></div>
 </div>
