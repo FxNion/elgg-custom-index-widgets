@@ -24,10 +24,12 @@
             	?>
               <?php if (is_array($area1widgets) && sizeof($area1widgets) > 0)
                     		foreach($area1widgets as $widget) {
-                    			if ($widget instanceof ElggObject)
-                      		  echo elgg_view_entity($widget);
-                      		 else
-                      			echo $widget;
+                    			
+                    			if ($widget instanceof ElggObject){
+                      		  		echo elgg_view_entity($widget);
+                    			}else{
+                      				echo $widget;
+                    			}
               } ?>
               </div>
         </td>

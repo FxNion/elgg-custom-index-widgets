@@ -46,7 +46,6 @@
 		
 		if (is_array($area_widget_list) && sizeof($area_widget_list) > 0) {
 	  		foreach($area_widget_list as $widget) {
-	
 				if($build_server_side){
 		  			
 					$var_widget = new ElggWidget($widget->getGUID());

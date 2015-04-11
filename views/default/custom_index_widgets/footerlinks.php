@@ -1,1 +1,1 @@
-<a href="http://fxnion.free.fr/"><small><small><small>Custom index by Fx NION</small></small></small></a>
+<a href="http://fxnion.free.fr/"><img src="mod/custom_index_widgets/images/fxnion_elgg_custom_index.gif" alt="Custom index by Fx Nion" title="Custom index by Fx Nion"/></a>
