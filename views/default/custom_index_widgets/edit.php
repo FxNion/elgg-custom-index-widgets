@@ -129,6 +129,7 @@ $(document).ready(function () {
   ?>
   </div>
   <form action="<?php echo $vars['url']; ?>action/widgets/reorder" method="post" style="display: inline">
+	<?php echo elgg_view('input/securitytoken') ?>
     <textarea type="textarea" value="Left widgets"   style="display:none" name="debugField1" id="debugField1" /><?php echo $leftcolumn_widgets; ?></textarea>
     <textarea type="textarea" value="Middle widgets" style="display:none" name="debugField2" id="debugField2" /><?php echo $middlecolumn_widgets; ?></textarea>
     <textarea type="textarea" value="Right widgets"  style="display:none" name="debugField3" id="debugField3" /><?php echo $rightcolumn_widgets; ?></textarea>
