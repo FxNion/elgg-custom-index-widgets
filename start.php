@@ -27,6 +27,7 @@
 		  add_widget_type('latest_generic_index',elgg_echo ('custom_index_widgets:latest_generic_index'),elgg_echo ('custom_index_widgets:latest_generic_index'), "custom_index_widgets", true);
 		  add_widget_type('latest_activity_index',elgg_echo ('custom_index_widgets:latest_activity_index'),elgg_echo ('custom_index_widgets:latest_activity_index'), "custom_index_widgets", true);
 		  add_widget_type('cloud_generic_index',elgg_echo ('custom_index_widgets:cloud_generic_index'),elgg_echo ('custom_index_widgets:cloud_generic_index'), "custom_index_widgets", true);
+		  add_widget_type('social_share_index',elgg_echo ('custom_index_widgets:social_share_index'),elgg_echo ('custom_index_widgets:social_share_index'), "custom_index_widgets", true);
 
         if(is_plugin_enabled('groups'))	
           add_widget_type('latest_groups_index',elgg_echo ('custom_index_widgets:latest_groups_index'),elgg_echo ('custom_index_widgets:latest_groups_index'), "custom_index_widgets", true);
