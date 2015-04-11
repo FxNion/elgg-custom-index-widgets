@@ -62,6 +62,13 @@
         'custom_index_widgets:inlayout'=>"Barra inferior",
         'custom_index_widgets:topbar'=>"Barra superior",
         'custom_index_widgets:widget_all_groups' => "Todos los grupos",
+		
+		"custom_index_widgets:showdashboard"=>"End index with dashboard",
+        "custom_index_widgets:showdashboard_yes"=>"Si",
+		"custom_index_widgets:showdashboard_no"=>"No",
+		"custom_index_widgets:guest_only" => "Guest only",
+		"custom_index_widgets:box_style" => "Box Style",
+		"custom_index_widgets:social_share_index" => "Social Share"
    
     );
                    

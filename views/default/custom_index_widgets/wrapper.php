@@ -2,24 +2,40 @@
 if ($vars['entity'] instanceof ElggObject && $vars['entity']->getSubtype() == 'widget') {
     $handler = $vars['entity']->handler;
     $title = $vars['entity']->title;
-    if (!$title)
+    
+    $guest_only = $vars['entity']->guest_only;
+	if (!isset($guest_only)) $guest_only = "no";
+	
+	$box_style = $vars['entity']->box_style;
+	if (!isset($box_style)) {
+		$box_style = "collapsable"; //collapsable, standard, plain
+	}
+	
+	$style_prefix = $box_style . "_";
+
+    if (!$title){
         $title = $handler;
+    }
+
 } else {
     $handler = "error";
     $title = elgg_echo("error");
 }
 ?>
+<?php if ( (isloggedin() && $guest_only == "no") || !isloggedin() ): ?>
 <div id="widget<?php echo $vars['entity']->getGUID(); ?>">
-    <div class="collapsable_box">
-        <div class="collapsable_box_header">
-            <a href="javascript:void(0);" class="toggle_box_contents">-</a>
+    <div class="<?php echo $style_prefix; ?>box">
+        <div class="<?php echo $style_prefix; ?>box_header">
+            <?php if ($style_prefix == "collapsable_" || $style_prefix == "plain collapsable_" ):?> 
+            	<a href="javascript:void(0);" class="toggle_box_contents">-</a>
+            <?php endif ?>
             <h1>
                 <?php echo $title; ?>
             </h1>
         </div>
         <?php if ($vars['entity']->canEdit()) { ?>
         <?php } ?>
-        <div class="collapsable_box_content">
+        <div class="<?php echo $style_prefix; ?>box_content">
             <?php
             echo "<div id=\"widgetcontent{$vars['entity']->getGUID()}\">";
             
@@ -27,13 +43,11 @@ if ($vars['entity'] instanceof ElggObject && $vars['entity']->getSubtype() == 'w
                 echo elgg_view("widgets/{$handler}/view", $vars);
             else
                 echo elgg_echo('widgets:handlernotfound');
-            
             ?>
             <script language="javascript">
                 $(document).ready(function(){
                     setup_avatar_menu();
                 });
-                
             </script>
         </div>
         <!-- /.collapsable_box_content -->
@@ -52,3 +66,4 @@ if ($vars['entity'] instanceof ElggObject && $vars['entity']->getSubtype() == 'w
         
     });
 </script>
+<?php endif ?>

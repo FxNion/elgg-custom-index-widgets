@@ -69,6 +69,10 @@
 		
 		'custom_index_widgets:widget_all_groups' => "Tous les groupes",
 		"search:go" => "Ok",
+		"custom_index_widgets:guest_only" => "Que pour les invités",
+		"custom_index_widgets:box_style" => "Type d'affichage",
+		"custom_index_widgets:social_share_index" => "Social Share"
+		
 	);
 					
 	add_translation("fr",$french);

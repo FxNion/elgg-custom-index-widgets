@@ -62,6 +62,14 @@
         'custom_index_widgets:inlayout'=>"Im Layout",
         'custom_index_widgets:topbar'=>"Top-Leiste",
         'custom_index_widgets:widget_all_groups' => "Alle Gruppen",
+        
+		"custom_index_widgets:showdashboard"=>"End index with dashboard",
+        "custom_index_widgets:showdashboard_yes"=>"Ya",
+		"custom_index_widgets:showdashboard_no"=>"Nein",
+		
+		"custom_index_widgets:guest_only" => "Guest only",
+		"custom_index_widgets:box_style" => "Box Style",
+		"custom_index_widgets:social_share_index" => "Social Share"
    
     );
                    
