@@ -106,7 +106,7 @@ table.index_mode{
 }
 
 td.small {
-  width: 33%;
+  width: 38%;
 }
 td.half {
   width: 47%;
@@ -134,6 +134,11 @@ td.big {
 }
 .logintop_links a:hover {
 	color:#eeeeee;
+}
+
+#logintopform{
+	color: #BBBBBB;
+	font-size: 12px;
 }
 
 #logintopform input.logintop_input {

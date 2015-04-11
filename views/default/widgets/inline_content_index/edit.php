@@ -11,7 +11,7 @@
 			'value' => $widget_title
 		));
 	?>
-  </p>
+</p>
 <p>
 <?php echo elgg_echo('custom_index_widgets:html_content'); ?>	
 <?php

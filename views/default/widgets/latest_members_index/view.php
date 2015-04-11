@@ -9,6 +9,7 @@
   
 ?>        
 <div class="contentWrapper">
+  <div style="text-align: center">
   <?php 
       if(isset($widgtet_datas)) {
           
@@ -23,6 +24,7 @@
           }
       }
   ?>
+  </div>
 	<div class="clearfloat"> </div>
 </div>
 

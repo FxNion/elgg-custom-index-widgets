@@ -130,9 +130,9 @@ $(document).ready(function () {
   </div>
   <form action="<?php echo $vars['url']; ?>action/widgets/reorder" method="post" style="display: inline">
 	<?php echo elgg_view('input/securitytoken') ?>
-    <textarea type="textarea" value="Left widgets"   style="display:none" name="debugField1" id="debugField1" /><?php echo $leftcolumn_widgets; ?></textarea>
-    <textarea type="textarea" value="Middle widgets" style="display:none" name="debugField2" id="debugField2" /><?php echo $middlecolumn_widgets; ?></textarea>
-    <textarea type="textarea" value="Right widgets"  style="display:none" name="debugField3" id="debugField3" /><?php echo $rightcolumn_widgets; ?></textarea>
+    <input type="hidden" style="display:none" name="debugField1" id="debugField1" value="<?php echo $leftcolumn_widgets; ?>"/>
+    <input type="hidden" style="display:none" name="debugField2" id="debugField2"  value="<?php echo $middlecolumn_widgets; ?>"/>
+    <input type="hidden" style="display:none" name="debugField3" id="debugField3"  value="<?php echo $rightcolumn_widgets; ?>"/>
     <input type="hidden" name="context" value="<?php echo get_context(); ?>" />
     <input type="hidden" name="owner" value="<?php echo $page_owner; ?>" />
     <input type="submit" value="<?php echo elgg_echo('save'); ?>" class="submit_button" onclick="$('a.toggle_customise_edit_panel').click();" />
@@ -141,9 +141,9 @@ $(document).ready(function () {
   &nbsp;
   <form action="<?php echo $vars['url']; ?>action/custom_index_widgets/reset" method="post" style="display: inline">
   	<?php echo elgg_view('input/securitytoken') ?>
-    <textarea type="textarea" value="Left widgets"   style="display:none" name="debugField1" id="debugField1" /><?php echo $leftcolumn_widgets; ?></textarea>
-    <textarea type="textarea" value="Middle widgets" style="display:none" name="debugField2" id="debugField2" /><?php echo $middlecolumn_widgets; ?></textarea>
-    <textarea type="textarea" value="Right widgets"  style="display:none" name="debugField3" id="debugField3" /><?php echo $rightcolumn_widgets; ?></textarea>
+    <input type="hidden" style="display:none" name="debugField1" id="debugField1" value="<?php echo $leftcolumn_widgets; ?>"/>
+    <input type="hidden" style="display:none" name="debugField2" id="debugField2"  value="<?php echo $middlecolumn_widgets; ?>"/>
+    <input type="hidden" style="display:none" name="debugField3" id="debugField3"  value="<?php echo $rightcolumn_widgets; ?>"/>
     <input type="hidden" name="context" value="<?php echo get_context(); ?>" />
     <input type="hidden" name="owner" value="<?php echo $page_owner; ?>" />
    	<input type="submit" value="<?php echo elgg_echo('custom_index_widgets:reset'); ?>" class="cancel_button"  />

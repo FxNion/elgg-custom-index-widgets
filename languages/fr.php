@@ -68,6 +68,7 @@
 		"custom_index_widgets:showdashboard_no"=>"Non",
 		
 		'custom_index_widgets:widget_all_groups' => "Tous les groupes",
+		"search:go" => "Ok",
 	);
 					
 	add_translation("fr",$french);

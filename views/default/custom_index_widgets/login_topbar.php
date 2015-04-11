@@ -43,7 +43,7 @@
 	
 	<div id="elgg_topbar_container_left" style="width: 10%">
 		<div class="toolbarimages">
-			<a href="http://www.elgg.org" target="_blank"><img src="<?php echo $vars['url']; ?>_graphics/elgg_toolbar_logo.gif" /></a>
+			<a href="<?php echo $vars['url']; ?>"><img src="<?php echo $vars['url']; ?>_graphics/elgg_toolbar_logo.gif" /></a>
 		</div>
 	</div>
 	<div class="logintop">
@@ -66,7 +66,7 @@
 
 <div id="elgg_topbar_container_left">
 	<div class="toolbarimages">
-		<a href="http://www.elgg.org" target="_blank"><img src="<?php echo $vars['url']; ?>_graphics/elgg_toolbar_logo.gif" /></a>
+		<a href="<?php echo $vars['url']; ?>"><img src="<?php echo $vars['url']; ?>_graphics/elgg_toolbar_logo.gif" /></a>
 		
 		<a href="<?php echo $_SESSION['user']->getURL(); ?>"><img class="user_mini_avatar" src="<?php echo $_SESSION['user']->getIcon('topbar'); ?>" /></a>
 		
