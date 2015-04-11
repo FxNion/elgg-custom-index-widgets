@@ -3,8 +3,15 @@
     function custom_index_widgets_init() {
 	
 
-		extend_view('css','custom_index_widgets/css');
-		extend_view('metatags','custom_index_widgets/js');		
+		elgg_extend_view('css','custom_index_widgets/css');
+		elgg_extend_view('metatags','custom_index_widgets/js');
+		
+		/*****************************************************************************/
+		/* Please, il you like the custom Index Widget Pluggin, let me add a small link in your footer */
+		elgg_extend_view('footer/links','custom_index_widgets/footerlinks');
+		/******************************************************************************/
+		
+		
 		
 		$ciw_layout = get_plugin_setting("ciw_layout", "custom_index_widgets");
 		if ($ciw_layout == NULL)
