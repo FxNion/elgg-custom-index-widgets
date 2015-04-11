@@ -1,5 +1,3 @@
-<?php
-
 	<?php
 
     $german = array(
@@ -67,7 +65,4 @@
     );
                    
     add_translation("de",$german);
-
-?>
-
 ?>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin_manifest>
         <field key="author" value="Fx NION" />
-        <field key="version" value="1.9" />
+        <field key="version" value="1.9.1" />
         <field key="description" value="Customise your index, with severals layout and customisable widgets. And get fun." />
         <field key="website" value="http://fxnion.free.fr/" />
-        <field key="copyright" value="((C) Fx NION 2009" />
+        <field key="copyright" value="((C) Fx NION 2009/2010" />
         <field key="licence" value="GNU Public License version 2" />
-        <field key="elgg_version" value="2009030702" />
+        <field key="elgg_version" value="2010012901" />
 </plugin_manifest>

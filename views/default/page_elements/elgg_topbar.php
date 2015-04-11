@@ -31,7 +31,7 @@
   	  	
 	$form_body .= "<span class=\"logintop_links\">";
 	$form_body .=  (!isset($CONFIG->disable_registration) || !($CONFIG->disable_registration)) ? "<a href=\"{$vars['url']}account/register.php\">" . elgg_echo('register') . "</a> |" : "";
-  	$form_body .=  "<a href=\"{$vars['url']}account/forgotten_password.php\">" . elgg_echo('user:password:lost');  
+  	$form_body .=  "<a href=\"{$vars['url']}account/forgotten_password.php\">" . elgg_echo('user:password:lost')."</a>";   
 	$form_body .= "</span>";
   	
 	$login_url = $vars['url'];
