@@ -12,7 +12,7 @@
   <?php echo elgg_echo('custom_index_widgets:widget_title'); ?>:
   <?php
 	echo elgg_view('input/text', array(
-			'internalname' => 'params[widget_title]',                        
+			'name' => 'params[widget_title]',                        
 			'value' => $widget_title
 		));
 	?>
@@ -21,7 +21,7 @@
 <?php echo elgg_echo('custom_index_widgets:html_content'); ?>	
 <?php
 	echo elgg_view('input/longtext', array(
-			'internalname' => 'params[html_content]',                        
+			'name' => 'params[html_content]',                        
 			'value' => $html_content
 		));
 	?>
@@ -30,7 +30,7 @@
       <?php echo elgg_echo('custom_index_widgets:box_style'); ?>
       :
       <?php
-      echo elgg_view('input/pulldown', array('internalname'=>'params[box_style]', 
+      echo elgg_view('input/dropdown', array('name'=>'params[box_style]', 
       										 'options_values'=>array('plain'=>'Plain', 'plain collapsable'=>'Plain and collapsable', 'collapsable'=>'Collapsable', 'standard' => 'No Collapsable'),
        										 'value'=>$box_style));
       ?>
@@ -39,7 +39,7 @@
       <?php echo elgg_echo('custom_index_widgets:guest_only'); ?>
       :
       <?php
-      echo elgg_view('input/pulldown', array('internalname'=>'params[guest_only]', 
+      echo elgg_view('input/dropdown', array('name'=>'params[guest_only]', 
       										 'options_values'=>array('yes'=>'yes', 'no'=>'no'),
        										 'value'=>$guest_only));
       ?>

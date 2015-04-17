@@ -63,12 +63,20 @@
         'custom_index_widgets:topbar'=>"Barra superior",
         'custom_index_widgets:widget_all_groups' => "Todos los grupos",
 		
+		"custom_index_widgets:responsive"=>"Index responsive",
+		"custom_index_widgets:responsive_yes"=>"Si",
+		"custom_index_widgets:responsive_no"=>"No",
+		
+		"custom_index_widgets:bodywidth"=>"Body width in px(fixed) or % (fluid)",
+		
 		"custom_index_widgets:showdashboard"=>"End index with dashboard",
         "custom_index_widgets:showdashboard_yes"=>"Si",
 		"custom_index_widgets:showdashboard_no"=>"No",
 		"custom_index_widgets:guest_only" => "Guest only",
 		"custom_index_widgets:box_style" => "Box Style",
-		"custom_index_widgets:social_share_index" => "Social Share"
+		"custom_index_widgets:social_share_index" => "Social Share",
+		"custom_index_widgets:login_index"=>"Login",
+		"admin:appearance:custom_index_widgets" => "Index Widgets"
    
     );
                    
