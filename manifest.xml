@@ -11,7 +11,7 @@
 	<license>GNU General Public License version 2</license>
 	<requires>
 		<type>elgg_release</type>
-		<version>1.8.19</version>
+		<version>1.9.7</version>
 	</requires>
 	<activate_on_install>false</activate_on_install>
 </plugin_manifest>
